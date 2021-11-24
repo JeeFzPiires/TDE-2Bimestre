@@ -52,6 +52,7 @@ namespace ApiProduto
                 };
             });
 
+            //Configurando a documentação swagger
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1",

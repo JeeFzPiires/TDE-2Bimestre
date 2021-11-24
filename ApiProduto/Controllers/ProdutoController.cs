@@ -23,9 +23,10 @@ namespace ApiProduto.Controllers
 
         private readonly ProdutoContext Context;
         public static IWebHostEnvironment _environment;
-        public ProdutoController()
+        public ProdutoController(IWebHostEnvironment environment)
         {
             Context = new ProdutoContext();
+            _environment = environment;
         }
 
         [HttpGet]
